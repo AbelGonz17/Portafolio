@@ -103,7 +103,7 @@
                         <!-- Foto -->
                         <div
                             class="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-primary/30">
-                            <img src="/public/images/Abel Gonzalez.jpg" alt="Foto de perfil"
+                            <img src="/images/Abel Gonzalez.jpg" alt="Foto de perfil"
                                 class="w-full h-full object-cover" />
                         </div>
 

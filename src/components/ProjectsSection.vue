@@ -14,7 +14,7 @@ const projects: Project[] = [
     {
         title: 'Pokedex REST API',
         description: 'RESTful API developed in .NET that consumes data from the PokéAPI and enables internal management. Implements JWT authentication, SQL Server persistence, DTOs, and AutoMapper. Applies Clean Architecture principles and design patterns to ensure scalability, maintainability, and a well-structured codebase.',
-        image: '/public/images/PokedexCore.png',
+        image: '/images/PokedexCore.png',
         technologies: ['.NET', 'Entity Framework', 'SQL Server', 'Docker Compose', 'Design Patterns'],
         github: 'https://github.com/AbelGonz17/PokedexCore',
         live: '',
@@ -22,7 +22,7 @@ const projects: Project[] = [
     {
         title: 'Gym Reservation API',
         description: 'RESTful API developed in .NET to manage gym class reservations. Implements JWT authentication, schedule-based availability control, role management, and data persistence using SQL Server and Entity Framework. Containerized with Docker for streamlined deployment.',
-        image: '/public/images/ApiReservacionesGym.png',
+        image: '/images/ApiReservacionesGym.png',
         technologies: ['.NET', 'SQL Server', 'Entity Framework', 'Docker'],
         github: 'https://github.com/AbelGonz17/Api_ReservacionesGym',
         live: '',
@@ -30,7 +30,7 @@ const projects: Project[] = [
     {
         title: 'Barbershop Management API',
         description: 'RESTful API for managing appointments and services in a barbershop. Implements JWT authentication, availability control, user management, and SQL Server data persistence, following clean architecture principles and organized code structure.',
-        image: '/public/images/BarberiaAPI.png',
+        image: '/images/BarberiaAPI.png',
         technologies: ['.NET', 'SQL Server', 'Entity Framework', 'Docker'],
         github: 'https://github.com/AbelGonz17/BarberiaApi',
         live: '',
@@ -38,7 +38,7 @@ const projects: Project[] = [
     {
         title: 'Drinks & Coffee E-Commerce',
         description: 'E-commerce web application developed with Vue.js and Tailwind CSS. Features user authentication with Firebase, shopping cart functionality, dynamic product management, and deployment on Vercel.',
-        image: '/public/images/Drink&Coffe.png',
+        image: '/images/Drink&Coffe.png',
         technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
         github: 'https://github.com/AbelGonz17/DrinksCoffe-vue',
         live: 'https://drinks-coffe-vue.vercel.app/',
@@ -46,7 +46,7 @@ const projects: Project[] = [
     {
         title: 'Microservices Architecture with RabbitMQ',
         description: 'Microservices-based project developed in .NET using RabbitMQ for inter-service communication. Implements CQRS and Clean Architecture principles to ensure scalability, maintainability, and clear separation of responsibilities.',
-        image: '/public/images/Microservices.png',
+        image: '/images/Microservices.png',
         technologies: ['.NET', 'RabbitMQ', 'Docker Compose', 'Design Patterns', 'Microservices', 'Clean Architecture', 'CQRS'],
         github: 'https://github.com/AbelGonz17/MicroservicesRabbitMQ',
         live: '',
@@ -54,7 +54,7 @@ const projects: Project[] = [
     {
         title: 'Veterinary Management System',
         description: 'Web application developed for managing a veterinary clinic, built with Vue.js and Tailwind CSS. Allows management of patients, pet owners, and veterinary consultations through an intuitive and responsive interface. Deployed on Netlify.',
-        image: '/public/images/Veterianaria.png',
+        image: '/images/Veterianaria.png',
         technologies: ['Vue.js', 'Tailwind CSS', 'Netlify'],
         github: 'https://github.com/AbelGonz17/Admin-Pacientes',
         live: 'https://administracion-veterinaria.netlify.app/',
