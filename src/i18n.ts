@@ -1,23 +1,23 @@
 import { createI18n } from "vue-i18n";
 
-import enAbout from "./locales/en/about.json";
-import esAbout from "./locales/es/about.json";
-import enContact from "./locales/en/contact.json";
-import esContact from "./locales/es/contact.json";
-import enHero from "./locales/en/hero.json";
-import esHero from "./locales/es/hero.json";
-import esExperience from "./locales/es/experience.json";
-import enExperience from "./locales/en/experience.json";
-import enSkills from "./locales/en/skills.json";
-import esSkills from "./locales/es/skills.json";
-import esEducation from "./locales/es/education.json";
-import enEducation from "./locales/en/education.json";
-import enProjects from "./locales/en/projects.json";
-import esProjects from "./locales/es/projects.json";
-import esFooter from "./locales/es/footer.json";
-import enFooter from "./locales/en/footer.json";
-import esNavbar from "./locales/es/navbar.json";
-import enNavbar from "./locales/en/navbar.json";
+import enAbout from "./Locales/en/about.json";
+import esAbout from "./Locales/es/about.json";
+import enContact from "./Locales/en/contact.json";
+import esContact from "./Locales/es/contact.json";
+import enHero from "./Locales/en/hero.json";
+import esHero from "./Locales/es/hero.json";
+import esExperience from "./Locales/es/experience.json";
+import enExperience from "./Locales/en/experience.json";
+import enSkills from "./Locales/en/skills.json";
+import esSkills from "./Locales/es/skills.json";
+import esEducation from "./Locales/es/education.json";
+import enEducation from "./Locales/en/education.json";
+import enProjects from "./Locales/en/projects.json";
+import esProjects from "./Locales/es/projects.json";
+import esFooter from "./Locales/es/footer.json";
+import enFooter from "./Locales/en/footer.json";
+import esNavbar from "./Locales/es/navbar.json";
+import enNavbar from "./Locales/en/navbar.json";
 
 export const i18n = createI18n({
   legacy: false,
