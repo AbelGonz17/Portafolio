@@ -26,7 +26,7 @@ const education = computed<EducationItem[]>(() => [
         title: t('Education.Education.Education1.Tittle'),
         institution: 'Colegio Parroquial Nuestra Señora de Lourdes',
         period: '2017 – 2021',
-        description: 'Completed secondary education with a strong emphasis on analytical thinking, mathematics, and technology fundamentals. Developed discipline, teamwork, and problem-solving skills that laid the foundation for my career in software development.',
+        description: t('Education.Education.Education1.Description'),
         badge: '/images/Colegio.jfif',
     },
     {
@@ -34,7 +34,7 @@ const education = computed<EducationItem[]>(() => [
         title: t('Education.Education.Education2.Tittle'),
         institution: 'Instituto Tecnologico de la Americas (ITLA)',
         period: '2025 – Present',
-        description: 'Developing strong foundations in system design, clean architecture, APIs, and full-stack development. Complementing academic training with hands-on projects using modern technologies and industry best practices.',
+        description: t('Education.Education.Education2.Description'),
         badge: '/images/ITLA.png',
     }
 ])
