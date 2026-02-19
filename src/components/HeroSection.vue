@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+
+</script>
+
 <template>
     <section id="inicio" class="relative min-h-screen flex items-center overflow-hidden">
         <!-- Background glow effect -->
@@ -12,18 +20,12 @@
                 <!-- Text Content -->
                 <div class="order-2 md:order-1">
 
-                    <!-- Greeting badge — ya no vacío -->
-                    <div class="inline-flex items-center gap-2 font-mono text-sm text-primary mb-5 tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                       Hello, I am
-                    </div>
-
                     <!-- Nombre + rol en una sola línea visual coherente -->
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
-                        Abel Gonzalez
+                        {{ t('hero.Abel') }}
                     </h1>
                     <p class="text-2xl md:text-3xl font-semibold text-primary mt-2">
-                        Software Developer
+                        {{ t('hero.Software') }}
                     </p>
 
                     <!-- Stack tags -->
@@ -38,16 +40,14 @@
                     </div>
 
                     <p class="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed text-pretty max-w-lg">
-                       Full Stack Developer specializing in Vue and .NET, focused on creating modern, scalable, and
-                        well-structured applications. I enjoy building complete solutions, from dynamic interfaces to
-                        robust APIs and optimized databases.
+                       {{ t('hero.Text1') }}
                     </p>
 
                     <!-- CTAs -->
                     <div class="flex flex-wrap items-center gap-4 mt-8">
                         <a href="#proyectos"
                             class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity">
-                            See projects
+                            {{ t('hero.See') }}
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -55,7 +55,7 @@
                         </a>
                         <a href="#contacto"
                             class="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors">
-                            Contact
+                            {{ t('hero.Contact') }}
                         </a>
                     </div>
 

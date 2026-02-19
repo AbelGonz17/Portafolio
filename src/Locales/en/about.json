@@ -1,0 +1,21 @@
+{
+  "title": "About me",
+  "description1": "I am a software developer passionate about technology and creating efficient digital solutions. I have experience building modern web applications with",
+  "frontend": "on the frontend and",
+  "backend": "on the backend, developing intuitive interfaces and robust APIs, always focused on scalability and clean code.",
+  "description2": "I love learning new technologies and sharing knowledge with the community. I'm always looking to improve my skills and stay up-to-date with the latest development trends.",
+  "outOfCode": "Out of the code",
+  "seeProjects": "See my projects",
+  "stats": {
+    "projects": "Developed projects",
+    "technologies": "Technologies used",
+    "experience": "Years of experience",
+    "quality": "Focus on quality"
+  },
+  "interests": {
+    "music": "Music",
+    "videogames": "Video Games",
+    "opensource": "Open Source",
+    "family": "Family"
+  }
+}

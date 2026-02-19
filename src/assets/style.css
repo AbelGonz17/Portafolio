@@ -47,9 +47,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-  /* Transición suave al cambiar de tema */
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* 🔥 evita scroll horizontal */
 }
+
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
@@ -59,7 +60,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* 🔥 seguridad extra */
 }
+
 
 ::selection {
   background-color: var(--primary);

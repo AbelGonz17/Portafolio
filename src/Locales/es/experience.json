@@ -1,0 +1,17 @@
+{
+  "Job1": {
+    "role": "Desarrollador Full Stack",
+    "Badge": "Pasantía",
+    "Company": "Laboratorio Referencia",
+    "Period": "2025 - Presente",
+    "Description": "Desarrollo y mantenimiento de aplicaciones web utilizando Vue en el frontend y .NET en el backend. Implementación de APIs, integración con bases de datos y despliegue en entornos Docker, trabajando en colaboración con equipos multidisciplinarios."
+  },
+  "Job2": {
+    "role": "Desarrollador Backend",
+    "Company": "Transporte Tito",
+    "Period": "2024 - 2025",
+    "Description": "Diseño y desarrollo de APIs REST con .NET, integración con bases de datos SQL Server y MongoDB, y manejo de mensajería con Kafka. Optimización de rendimiento y estructuración de arquitecturas escalables."
+  },
+  "Current": "Trabajo Actual",
+  "Experience": "Experiencia"
+}

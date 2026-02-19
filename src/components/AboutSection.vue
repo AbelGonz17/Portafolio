@@ -1,43 +1,48 @@
 <script setup lang="ts">
 import SectionHeader from './SectionHeader.vue'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 
-const stats = [
-    { value: '10+', label: 'Developed projects', icon: '🚀' },
-    { value: '5+', label: 'Technologies used', icon: '⚡' },
-    { value: '2+', label: 'Years of experience', icon: '📅' },
-    { value: '100%', label: 'Focus on quality', icon: '✦' },
-]
+const { t } = useI18n()
 
-const interests = [
-    { label: 'Músic', icon: '🎵' },
-    { label: 'VideoGames', icon: '🎮' },
-    { label: 'Open Source', icon: '🛠️' },
-    { label: 'Family', icon: '🤝' },
-]
+const stats = computed(() => [
+    { value: '10+', label: t('about.stats.projects'), icon: '🚀' },
+    { value: '5+', label: t('about.stats.technologies'), icon: '⚡' },
+    { value: '2+', label: t('about.stats.experience'), icon: '📅' },
+    { value: '100%', label: t('about.stats.quality'), icon: '✦' },
+])
+
+const interests = computed(() => [
+    { label: t('about.interests.music'), icon: '🎵' },
+    { label: t('about.interests.videogames'), icon: '🎮' },
+    { label: t('about.interests.opensource'), icon: '🛠️' },
+    { label: t('about.interests.family'), icon: '🤝' },
+])
 </script>
+
 
 <template>
     <section id="sobre-mi" class="py-24 md:py-32">
         <div class="mx-auto max-w-6xl px-6">
-            <SectionHeader number="01" title="About me" />
+            <SectionHeader number="01" :title="t('about.title')" />
 
             <div class="grid md:grid-cols-5 gap-12 mt-12 items-start">
 
                 <div class="md:col-span-3 space-y-5">
-                    <p class="text-muted-foreground leading-relaxed text-pretty text-base">
-                       I am a software developer passionate about technology and creating efficient digital solutions.
-                        I have experience building modern web applications with
-                        <span class="text-foreground font-medium">Vue</span> on the frontend and
-                        <span class="text-foreground font-medium">.NET</span> on the backend, developing intuitive interfaces and robust APIs, always focused on scalability and clean code.
+                   <p class="text-muted-foreground leading-relaxed text-pretty text-base">
+                        {{ t('about.description1') }}
+                        <span class="text-foreground font-medium">Vue</span>
+                        {{ t('about.frontend') }}
+                        <span class="text-foreground font-medium">.NET</span>
+                        {{ t('about.backend') }}
                     </p>
                     <p class="text-muted-foreground leading-relaxed text-pretty text-base">
-                       I love learning new technologies and sharing knowledge with the community.
-                        I'm always looking to improve my skills and stay up-to-date with the latest development trends.
+                        {{ t('about.description2') }}
                     </p>
 
                     <div class="pt-2">
-                        <p class="text-xs font-mono text-primary uppercase tracking-widest mb-3">
-                            Out the code
+                       <p class="text-muted-foreground leading-relaxed text-pretty text-base">
+                            {{ t('about.outOfCode') }}
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span v-for="item in interests" :key="item.label" class="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm
@@ -53,7 +58,7 @@ const interests = [
                     <div class="pt-2">
                         <a href="#proyectos" class="inline-flex items-center gap-2 text-sm font-medium text-primary
                                    hover:gap-3 transition-all duration-200 group">
-                            See my projects
+                            {{ t('about.seeProjects') }}
                             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

@@ -1,0 +1,30 @@
+{
+  "Projects": {
+    "Project1": {
+      "Title": "API REST de Pokedex",
+      "Description": "API RESTful desarrollada en .NET que consume datos de la PokéAPI y permite la gestión interna. Implementa autenticación JWT, persistencia con SQL Server, uso de DTOs y AutoMapper. Aplica principios de Clean Architecture y patrones de diseño para garantizar escalabilidad, mantenibilidad y una estructura de código bien organizada."
+    },
+    "Project2": {
+      "Title": "API de Reservas de Gimnasio",
+      "Description": "API RESTful desarrollada en .NET para gestionar reservas de clases en un gimnasio. Implementa autenticación JWT, control de disponibilidad por horarios, gestión de roles y persistencia de datos con SQL Server y Entity Framework. Contenerizada con Docker para facilitar su despliegue."
+    },
+    "Project3": {
+      "Title": "API de Gestión de Barbería",
+      "Description": "API RESTful para la gestión de citas y servicios en una barbería. Implementa autenticación JWT, control de disponibilidad, gestión de usuarios y persistencia de datos con SQL Server, siguiendo principios de Clean Architecture y una estructura de código organizada."
+    },
+    "Project4": {
+      "Title": "E-Commerce de Bebidas y Café",
+      "Description": "Aplicación web de comercio electrónico desarrollada con Vue.js y Tailwind CSS. Incluye autenticación de usuarios con Firebase, funcionalidad de carrito de compras, gestión dinámica de productos y despliegue en Vercel."
+    },
+    "Project5": {
+      "Title": "Arquitectura de Microservicios con RabbitMQ",
+      "Description": "Proyecto basado en microservicios desarrollado en .NET utilizando RabbitMQ para la comunicación entre servicios. Implementa CQRS y principios de Clean Architecture para garantizar escalabilidad, mantenibilidad y una clara separación de responsabilidades."
+    },
+    "Project6": {
+      "Title": "Sistema de Gestión Veterinaria",
+      "Description": "Aplicación web desarrollada para la gestión de una clínica veterinaria, construida con Vue.js y Tailwind CSS. Permite administrar pacientes, dueños de mascotas y consultas veterinarias mediante una interfaz intuitiva y responsiva. Desplegada en Netlify."
+    },
+    "Text1": "Ver más en GitHub",
+    "Projects": "Proyectos"
+  }
+}

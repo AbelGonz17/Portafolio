@@ -1,10 +1,23 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useTheme } from '../Composables/useTheme'
+import { useI18n } from 'vue-i18n'
+
+const { locale, t } = useI18n()
+
+const displayed = ref('')
+const fullText = 'Abel_Gonz/>'
+const prefix = '> '
+
 
 interface NavItem {
     label: string
     href: string
+}
+
+const toggleLanguage = () => {
+    locale.value = locale.value === 'es' ? 'en' : 'es'
+    localStorage.setItem('lang', locale.value)
 }
 
 const mobileMenuOpen = ref<boolean>(false)
@@ -13,20 +26,20 @@ const activeSection = ref<string>('inicio')
 
 const { theme, toggleTheme } = useTheme()
 
-const navItems: NavItem[] = [
-    { label: 'Start', href: '#inicio' },
-    { label: 'About me', href: '#sobre-mi' },
-    { label: 'Experience', href: '#experiencia' },
-    { label: 'Skills', href: '#habilidades' },
-    { label: 'Projects', href: '#proyectos' },
-    { label: 'Contact', href: '#contacto' },
-    { label: 'Education', href: '#educacion' },
-]
+const navItems = computed<NavItem[]>(() => [
+    { label: t('Navbar.Start'), href: '#inicio' },
+    { label: t('Navbar.About'), href: '#sobre-mi' },
+    { label: t('Navbar.Experience'), href: '#experiencia' },
+    { label: t('Navbar.Skills'), href: '#habilidades' },
+    { label: t('Navbar.Projects'), href: '#proyectos' },
+    { label: t('Navbar.Contact'), href: '#contacto' },
+    { label: t('Navbar.Education'), href: '#educacion' },
+])
 
 const handleScroll = (): void => {
     scrolled.value = window.scrollY > 50
 
-    const sections: string[] = navItems.map((item) => item.href.slice(1))
+    const sections: string[] = navItems.value.map((item) => item.href.slice(1))
     for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i])
         if (el) {
@@ -46,6 +59,15 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
+
+onMounted(() => {
+    let i = 0
+    const interval = setInterval(() => {
+        displayed.value = fullText.slice(0, i + 1)
+        i++
+        if (i === fullText.length) clearInterval(interval)
+    }, 100)
+})
 </script>
 
 <template>
@@ -54,9 +76,12 @@ onUnmounted(() => {
         <nav class="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
 
             <!-- Logo -->
-            <a href="#inicio"
-                class="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors">
-                {{ '<Dev />' }}
+            <a href="#inicio" class="flex items-center font-mono text-xl font-bold tracking-tight group">
+                <span class="text-primary mr-1.5">&gt;</span>
+                <span class="text-foreground group-hover:text-primary transition-colors">{{ displayed }}</span>
+                <span class="ml-0.5 inline-block w-[2px] h-5 bg-primary"
+                    :class="displayed.length < fullText.length ? '' : 'animate-pulse'">
+                </span>
             </a>
 
             <!-- Desktop Navigation -->
@@ -88,10 +113,18 @@ onUnmounted(() => {
                     </button>
                 </li>
 
+                <!-- Language toggle -->
+                <li class="mt-2">
+                    <button @click="toggleLanguage" class="flex items-center justify-center gap-2 w-full px-4 py-3
+               text-sm font-medium rounded-lg border border-border
+               hover:border-primary hover:text-primary transition-colors">
+                        🌎 {{ locale === 'es' ? 'EN' : 'ES' }}
+                    </button>
+                </li>
+
                 <!-- GitHub CTA -->
                 <li class="ml-2">
-                    <a href="https://github.com/AbelGonz17" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground
+                    <a href="https://github.com/AbelGonz17" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground
                                text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                             <path
@@ -144,6 +177,19 @@ onUnmounted(() => {
                             :class="{ 'text-primary bg-secondary': activeSection === item.href.slice(1) }">
                             {{ item.label }}
                         </a>
+                    </li>
+                    <!-- Language toggle mobile -->
+                    <li class="mt-3">
+                        <button @click="toggleLanguage" class="flex items-center justify-between w-full px-4 py-3
+           rounded-xl bg-muted/40 hover:bg-muted transition-colors">
+                            <span class="text-sm font-medium">
+                                🌎 Language
+                            </span>
+
+                            <span class="text-sm font-semibold text-primary">
+                                {{ locale.toUpperCase() }}
+                            </span>
+                        </button>
                     </li>
                     <li class="mt-2">
                         <a href="https://github.com/AbelGonz17" target="_blank" rel="noopener noreferrer"

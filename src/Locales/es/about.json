@@ -1,0 +1,21 @@
+{
+  "title": "Sobre mí",
+  "description1": "Soy un desarrollador de software apasionado por la tecnología y por crear soluciones digitales eficientes. Tengo experiencia construyendo aplicaciones web modernas con",
+  "frontend": "en el frontend y",
+  "backend": "en el backend, desarrollando interfaces intuitivas y APIs robustas, siempre enfocado en la escalabilidad y el código limpio.",
+  "description2": "Me encanta aprender nuevas tecnologías y compartir conocimiento con la comunidad. Siempre estoy buscando mejorar mis habilidades y mantenerme actualizado con las últimas tendencias de desarrollo.",
+  "outOfCode": "Fuera del código",
+  "seeProjects": "Ver mis proyectos",
+  "stats": {
+    "projects": "Proyectos desarrollados",
+    "technologies": "Tecnologías utilizadas",
+    "experience": "Años de experiencia",
+    "quality": "Enfoque en la calidad"
+  },
+  "interests": {
+    "music": "Música",
+    "videogames": "Videojuegos",
+    "opensource": "Código Abierto",
+    "family": "Familia"
+  }
+}

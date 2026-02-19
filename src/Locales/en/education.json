@@ -1,0 +1,77 @@
+{
+    "EduactionType":
+    {
+        "University": "University",
+        "Course": "Course",
+        "Other": "Other",
+        "Baccalaureate": "Baccalaureate"
+    },
+    "Education":
+    {
+        "Education1":
+        {
+            "Tittle":"Baccalaureate/Language Technician" ,
+            "Institution": "Colegio Parroquial Nuestra Señora de Lourdes",
+            "Description": "Completed secondary education with a strong emphasis on analytical thinking, mathematics, and technology fundamentals. Developed discipline, teamwork, and problem-solving skills that laid the foundation for my career in software development."
+        },
+        "Education2":
+        {
+            "Tittle": "Software Developer (In Progress)",
+            "Institution": "Instituto Tecnologico de la Americas (ITLA)",
+            "Description": "Developing strong foundations in system design, clean architecture, APIs, and full-stack development. Complementing academic training with hands-on projects using modern technologies and industry best practices."
+        }
+    },
+    "Courses":
+    {
+        "Course1":
+        {
+            "Tittle": "Building Minimal APIs with ASP.NET Core 9 and EF Core"        
+        },
+        "Course2":
+        {
+            "Tittle": "C# TOTAL - Expert Programmer"
+        },
+        "Course3":
+        {
+            "Tittle": "Microservices with ASP.NET Core and Event Driven Architecture"
+        },
+        "Course4":
+        {
+            "Tittle": "SQL TOTAL - Master Databases"
+        },
+        "Course5":
+        {
+            "Tittle": "Building RESTful Web APIs with ASP.NET Core 9"
+        },
+        "Course6":
+        {
+            "Tittle": "Vue.js 3 - The Complete Guide - Composition Pinia MEVN 10 Apps"
+        },
+        "Course7":
+        {
+            "Tittle": "Python TOTAL - Advanced Programmer"
+        },
+        "Course8":
+        {
+            "Tittle": "Database Foundations"
+        },
+        "Course9":
+        {
+            "Tittle": "Unit testing course with C# and .NET"
+        },
+        "Course10":
+        {
+            "Tittle": "Fronted Development"
+        },
+        "Course11":
+        {
+            "Tittle": "Entity Framework fundamentals course"
+        }
+    },
+    "Text1": " My academic background and the courses I have completed to stay up-to-date with the latest technologies.",
+    "Text2": " Academic training",
+    "Text3": "Courses and certifications",
+    "Text4": "View certificate",
+    "Tittle": "Education"
+
+}

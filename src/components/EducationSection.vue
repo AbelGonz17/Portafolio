@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { I } from 'vue-router/dist/router-CWoNjPRp.mjs'
 import SectionHeader from './SectionHeader.vue'
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n()
 
 type EducationType = 'Baccalaureate' | 'course' | 'University' | 'Other'
 
@@ -15,10 +20,10 @@ interface EducationItem {
 }
 
 // ─── Reemplaza los datos con los tuyos ───────────────────────────────────────
-const education: EducationItem[] = [
+const education = computed<EducationItem[]>(() => [
     {
         type: 'Baccalaureate',
-        title: 'Baccalaureate/Language Technician',
+        title: t('Education.Education.Education1.Tittle'),
         institution: 'Colegio Parroquial Nuestra Señora de Lourdes',
         period: '2017 – 2021',
         description: 'Completed secondary education with a strong emphasis on analytical thinking, mathematics, and technology fundamentals. Developed discipline, teamwork, and problem-solving skills that laid the foundation for my career in software development.',
@@ -26,18 +31,18 @@ const education: EducationItem[] = [
     },
     {
         type: 'University',
-        title: 'Software Developer (In Progress)',
+        title: t('Education.Education.Education2.Tittle'),
         institution: 'Instituto Tecnologico de la Americas (ITLA)',
         period: '2025 – Present',
         description: 'Developing strong foundations in system design, clean architecture, APIs, and full-stack development. Complementing academic training with hands-on projects using modern technologies and industry best practices.',
         badge: '/images/ITLA.png',
     }
-]
+])
 
-const courses: EducationItem[] = [
+const courses = computed<EducationItem[]>(() => [
     {
         type: 'course',
-        title: 'Building Minimal APIs with ASP.NET Core 9 and EF Core',
+        title: t('Education.Courses.Course1.Tittle'),
         institution: 'Udemy',
         period: '2024',
         badge: '/images/Udemy.png',
@@ -46,7 +51,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'C# TOTAL - Expert Programmer',
+        title: t('Education.Courses.Course2.Tittle'),
         institution: 'Udemy',
         period: '2024',
         badge: '/images/Udemy.png',
@@ -55,7 +60,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Microservices with ASP.NET Core and Event Driven Architecture',
+        title: t('Education.Courses.Course3.Tittle'),
         institution: 'Udemy',
         period: '2025',
         badge: '/images/Udemy.png',
@@ -64,7 +69,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'SQL TOTAL - Master Databases',
+        title: t('Education.Courses.Course4.Tittle'),
         institution: 'Udemy',
         period: '2024',
         badge: '/images/Udemy.png',
@@ -73,7 +78,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Building RESTful Web APIs with ASP.NET Core 9',
+        title: t('Education.Courses.Course5.Tittle'),
         institution: 'Udemy',
         period: '2024',
         badge: '/images/Udemy.png',
@@ -82,7 +87,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Vue.js 3 - The Complete Guide - Composition Pinia MEVN 10 Apps',
+        title: t('Education.Courses.Course6.Tittle'),
         institution: 'Udemy',
         period: '2025',
         badge: '/images/Udemy.png',
@@ -91,7 +96,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Python TOTAL - Advanced Programmer',
+        title: t('Education.Courses.Course7.Tittle'),
         institution: 'Udemy',
         period: '2024',
         badge: '/images/Udemy.png',
@@ -100,7 +105,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Database Foundation',
+        title: t('Education.Courses.Course8.Tittle'),
         institution: 'Platzi',
         period: '2024',
         badge: '/images/Platzi.png',
@@ -109,7 +114,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Unit testing course with C# and .NET',
+        title: t('Education.Courses.Course9.Tittle'),
         institution: 'Platzi',
         period: '2024',
         badge: '/images/Platzi.png',
@@ -118,7 +123,7 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Fronted Development',
+        title: t('Education.Courses.Course10.Tittle'),
         institution: 'Platzi',
         period: '2024',
         badge: '/images/Platzi.png',
@@ -127,14 +132,14 @@ const courses: EducationItem[] = [
     },
     {
         type: 'course',
-        title: 'Entity Framework fundamentals course',
+        title: t('Education.Courses.Course11.Tittle'),
         institution: 'Platzi',
         period: '2024',
         badge: '/images/Platzi.png',
         credential: 'https://drive.google.com/file/d/1dER3VfUe0n7AwnSkEyYQQpxHMCk0BJoZ/view?usp=drive_link',
         technologies: ['Entity Framework', '.NET', 'Database Access', 'ORM', 'Code First'],
     }
-]
+])
 // ─────────────────────────────────────────────────────────────────────────────
 
 const platformColors: Record<string, string> = {
@@ -152,10 +157,10 @@ const getPlatformStyle = (institution: string): string =>
     <section id="educacion" class="py-24 md:py-32">
         <div class="mx-auto max-w-6xl px-6">
 
-            <SectionHeader number="04" title="Education" />
+            <SectionHeader number="04" :title="t('Education.Tittle')" />
 
             <p class="mt-6 max-w-2xl text-muted-foreground">
-                My academic background and the courses I have completed to stay up-to-date with the latest technologies.
+                {{t ("Education.Text1")}}
             </p>
 
             <!-- ── Formación académica ──────────────────────────────────────── -->
@@ -165,7 +170,7 @@ const getPlatformStyle = (institution: string): string =>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                     </svg>
-                    Academic training
+                    {{ t("Education.Text2") }}
                 </h3>
 
                 <div class="grid md:grid-cols-2 gap-4">
@@ -173,14 +178,14 @@ const getPlatformStyle = (institution: string): string =>
                                hover:border-primary/40 hover:-translate-y-1
                                hover:shadow-lg hover:shadow-primary/5
                                transition-all duration-300 flex gap-5">
-                        <!-- Badge / Logo -->
+                        
                         <div class="shrink-0">
                             <div v-if="item.badge"
                                 class="w-14 h-14 rounded-xl overflow-hidden border border-border bg-secondary flex items-center justify-center">
                                 <img :src="item.badge" :alt="item.institution"
                                     class="w-full h-full object-contain p-1" />
                             </div>
-                            <!-- Fallback icono si no hay imagen -->
+                            
                             <div v-else
                                 class="w-14 h-14 rounded-xl border border-border bg-primary/10 flex items-center justify-center">
                                 <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -190,7 +195,7 @@ const getPlatformStyle = (institution: string): string =>
                             </div>
                         </div>
 
-                        <!-- Contenido -->
+                       
                         <div class="flex-1 min-w-0">
                             <div class="flex items-start justify-between gap-2">
                                 <h4 class="font-semibold text-foreground leading-tight">{{ item.title }}</h4>
@@ -214,7 +219,7 @@ const getPlatformStyle = (institution: string): string =>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
-                    Courses and certifications
+                    {{t ("Education.Text3")}}
                 </h3>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -222,9 +227,9 @@ const getPlatformStyle = (institution: string): string =>
                                hover:border-border hover:-translate-y-1
                                hover:shadow-lg hover:shadow-black/10
                                transition-all duration-300 flex flex-col gap-4">
-                        <!-- Header: badge + plataforma -->
+                      
                         <div class="flex items-center justify-between">
-                            <!-- Logo plataforma -->
+                            
                             <div v-if="course.badge"
                                 class="w-10 h-10 rounded-lg overflow-hidden border border-border bg-secondary flex items-center justify-center">
                                 <img :src="course.badge" :alt="course.institution"
@@ -236,20 +241,18 @@ const getPlatformStyle = (institution: string): string =>
                                 {{ course.institution.slice(0, 2).toUpperCase() }}
                             </div>
 
-                            <!-- Pill de plataforma -->
                             <span class="text-xs font-medium px-2.5 py-1 rounded-full border"
                                 :class="getPlatformStyle(course.institution)">
                                 {{ course.institution }}
                             </span>
                         </div>
 
-                        <!-- Título y año -->
                         <div>
                             <h4 class="font-semibold text-foreground text-sm leading-snug">{{ course.title }}</h4>
                             <p class="text-xs text-muted-foreground font-mono mt-1">{{ course.period }}</p>
                         </div>
 
-                        <!-- Tecnologías -->
+                    
                         <div v-if="course.technologies" class="flex flex-wrap gap-1.5 mt-auto">
                             <span v-for="tech in course.technologies" :key="tech" class="px-2 py-0.5 text-xs font-mono bg-secondary text-secondary-foreground
                                        border border-border rounded-md">
@@ -257,7 +260,6 @@ const getPlatformStyle = (institution: string): string =>
                             </span>
                         </div>
 
-                        <!-- Link al certificado -->
                         <a v-if="course.credential" :href="course.credential" target="_blank" rel="noopener noreferrer"
                             class="flex items-center gap-1.5 text-xs text-muted-foreground
                                    hover:text-primary transition-colors mt-1 group/link">
@@ -265,11 +267,10 @@ const getPlatformStyle = (institution: string): string =>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
-                            Ver certificado
+                                {{ t("Education.Text4") }}
                             <span class="group-hover/link:translate-x-0.5 transition-transform">→</span>
                         </a>
 
-                        <!-- Línea decorativa de color en hover -->
                         <div class="absolute bottom-0 left-5 right-5 h-px rounded-full
                                     opacity-0 group-hover:opacity-100 transition-opacity duration-300
                                     bg-gradient-to-r from-transparent via-primary/40 to-transparent">

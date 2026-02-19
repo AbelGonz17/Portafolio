@@ -1,0 +1,62 @@
+{
+  "EduactionType": {
+    "University": "Universidad",
+    "Course": "Curso",
+    "Other": "Otro",
+    "Baccalaureate": "Bachillerato"
+  },
+
+  "Education": {
+    "Education1": {
+      "Tittle": "Bachillerato / Técnico en Lenguas",
+      "Institution": "Colegio Parroquial Nuestra Señora de Lourdes",
+      "Description": "Educación secundaria completada con un fuerte enfoque en pensamiento analítico, matemáticas y fundamentos tecnológicos. Desarrollé disciplina, trabajo en equipo y habilidades de resolución de problemas que sentaron las bases para mi carrera en el desarrollo de software."
+    },
+    "Education2": {
+      "Tittle": "Desarrollador de Software (En progreso)",
+      "Institution": "Instituto Tecnológico de las Américas (ITLA)",
+      "Description": "Desarrollando bases sólidas en diseño de sistemas, arquitectura limpia, APIs y desarrollo full-stack. Complementando la formación académica con proyectos prácticos utilizando tecnologías modernas y buenas prácticas de la industria."
+    }
+  },
+
+  "Courses": {
+    "Course1": {
+      "Tittle": "Construcción de Minimal APIs con ASP.NET Core 9 y EF Core"
+    },
+    "Course2": {
+      "Tittle": "C# TOTAL - Programador Experto"
+    },
+    "Course3": {
+      "Tittle": "Microservicios con ASP.NET Core y Arquitectura Orientada a Eventos"
+    },
+    "Course4": {
+      "Tittle": "SQL TOTAL - Dominio de Bases de Datos"
+    },
+    "Course5": {
+      "Tittle": "Construcción de APIs RESTful con ASP.NET Core 9"
+    },
+    "Course6": {
+      "Tittle": "Vue.js 3 - Guía Completa - Composition API, Pinia y 10 Apps MEVN"
+    },
+    "Course7": {
+      "Tittle": "Python TOTAL - Programador Avanzado"
+    },
+    "Course8": {
+      "Tittle": "Fundamentos de Bases de Datos"
+    },
+    "Course9": {
+      "Tittle": "Curso de pruebas unitarias con C# y .NET"
+    },
+    "Course10": {
+      "Tittle": "Desarrollo Frontend"
+    },
+    "Course11": {
+      "Tittle": "Curso de Fundamentos de Entity Framework"
+    }
+  },
+  "Text1": "Mi formación académica y los cursos que he completado para mantenerme actualizado con las últimas tecnologías.",
+  "Text2": "Formación académica",
+  "Text3": "Cursos y certificaciones",
+  "Text4": "Ver certificado",
+  "Tittle": "Educación"
+}

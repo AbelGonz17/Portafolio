@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import SectionHeader from './SectionHeader.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
 
 interface ContactLink {
     label: string
@@ -29,21 +33,19 @@ const contactLinks: ContactLink[] = [
 <template>
     <section id="contacto" class="py-24 md:py-32">
         <div class="mx-auto max-w-6xl px-6">
-            <SectionHeader number="06" title="Contact" />
+            <SectionHeader number="06" :title="t('contact.ContactTitlle')" />
 
             <div class="max-w-2xl mx-auto text-center mt-12">
                 <h3 class="text-3xl md:text-4xl font-bold text-foreground text-balance">
-                    Let's work together
+                    {{ t("contact.Work") }}
                 </h3>
                 <p class="text-muted-foreground leading-relaxed mt-4 text-pretty">
-                   I'm available for freelance projects, collaborations, or full-time positions.
-
-                    If you have an idea or project in mind, don't hesitate to contact me.
+                   {{ t("contact.Text1") }}
                 </p>
 
                 <a href="mailto:abel.gonzalez.dev17@gmail.com"
                     class="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity text-lg">
-                    Send an email
+                    {{ t("contact.Send a email") }}
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

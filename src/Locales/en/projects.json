@@ -1,0 +1,30 @@
+{
+  "Projects": {
+    "Project1": {
+      "Title": "Pokedex REST API",
+      "Description": "RESTful API developed in .NET that consumes data from the PokéAPI and enables internal management. Implements JWT authentication, SQL Server persistence, DTOs, and AutoMapper. Applies Clean Architecture principles and design patterns to ensure scalability, maintainability, and a well-structured codebase."
+    },
+    "Project2": {
+      "Title": "Gym Reservation API",
+      "Description": "RESTful API developed in .NET to manage gym class reservations. Implements JWT authentication, schedule-based availability control, role management, and data persistence using SQL Server and Entity Framework. Containerized with Docker for streamlined deployment."
+    },
+    "Project3": {
+      "Title": "Barbershop Management API",
+      "Description": "RESTful API for managing appointments and services in a barbershop. Implements JWT authentication, availability control, user management, and SQL Server data persistence, following clean architecture principles and organized code structure."
+    },
+    "Project4": {
+      "Title": "Drinks & Coffee E-Commerce",
+      "Description": "E-commerce web application developed with Vue.js and Tailwind CSS. Features user authentication with Firebase, shopping cart functionality, dynamic product management, and deployment on Vercel."
+    },
+    "Project5": {
+      "Title": "Microservices Architecture with RabbitMQ",
+      "Description": "Microservices-based project developed in .NET using RabbitMQ for inter-service communication. Implements CQRS and Clean Architecture principles to ensure scalability, maintainability, and clear separation of responsibilities."
+    },
+    "Project6": {
+      "Title": "Veterinary Management System",
+      "Description": "Web application developed for managing a veterinary clinic, built with Vue.js and Tailwind CSS. Allows management of patients, pet owners, and veterinary consultations through an intuitive and responsive interface. Deployed on Netlify."
+    },
+    "Text1": "See more on GitHub",
+    "Projects": "Projects"
+  }
+}

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import SectionHeader from './SectionHeader.vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 interface Project {
     title: string
@@ -10,56 +14,56 @@ interface Project {
     live: string
 }
 
-const projects: Project[] = [
+const projects = computed<Project[]>(() => [
     {
-        title: 'Pokedex REST API',
-        description: 'RESTful API developed in .NET that consumes data from the PokéAPI and enables internal management. Implements JWT authentication, SQL Server persistence, DTOs, and AutoMapper. Applies Clean Architecture principles and design patterns to ensure scalability, maintainability, and a well-structured codebase.',
+        title: t('Projects.Projects.Project1.Title'),
+        description: t('Projects.Projects.Project1.Description'),
         image: '/images/PokedexCore.png',
         technologies: ['.NET', 'Entity Framework', 'SQL Server', 'Docker Compose', 'Design Patterns'],
         github: 'https://github.com/AbelGonz17/PokedexCore',
         live: '',
     },
     {
-        title: 'Gym Reservation API',
-        description: 'RESTful API developed in .NET to manage gym class reservations. Implements JWT authentication, schedule-based availability control, role management, and data persistence using SQL Server and Entity Framework. Containerized with Docker for streamlined deployment.',
+        title: t('Projects.Projects.Project2.Title'),
+        description: t('Projects.Projects.Project2.Description'),
         image: '/images/ApiReservacionesGym.png',
         technologies: ['.NET', 'SQL Server', 'Entity Framework', 'Docker'],
         github: 'https://github.com/AbelGonz17/Api_ReservacionesGym',
         live: '',
     },
     {
-        title: 'Barbershop Management API',
-        description: 'RESTful API for managing appointments and services in a barbershop. Implements JWT authentication, availability control, user management, and SQL Server data persistence, following clean architecture principles and organized code structure.',
+        title: t('Projects.Projects.Project3.Title'),
+        description: t('Projects.Projects.Project3.Description'),
         image: '/images/BarberiaAPI.png',
         technologies: ['.NET', 'SQL Server', 'Entity Framework', 'Docker'],
         github: 'https://github.com/AbelGonz17/BarberiaApi',
         live: '',
     },
     {
-        title: 'Drinks & Coffee E-Commerce',
-        description: 'E-commerce web application developed with Vue.js and Tailwind CSS. Features user authentication with Firebase, shopping cart functionality, dynamic product management, and deployment on Vercel.',
+        title: t('Projects.Projects.Project4.Title'),
+        description: t('Projects.Projects.Project4.Description'),
         image: '/images/Drink&Coffe.png',
         technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
         github: 'https://github.com/AbelGonz17/DrinksCoffe-vue',
         live: 'https://drinks-coffe-vue.vercel.app/',
     },
     {
-        title: 'Microservices Architecture with RabbitMQ',
-        description: 'Microservices-based project developed in .NET using RabbitMQ for inter-service communication. Implements CQRS and Clean Architecture principles to ensure scalability, maintainability, and clear separation of responsibilities.',
+        title: t('Projects.Projects.Project5.Title'),
+        description: t('Projects.Projects.Project5.Description'),
         image: '/images/Microservices.png',
         technologies: ['.NET', 'RabbitMQ', 'Docker Compose', 'Design Patterns', 'Microservices', 'Clean Architecture', 'CQRS'],
         github: 'https://github.com/AbelGonz17/MicroservicesRabbitMQ',
         live: '',
     },
     {
-        title: 'Veterinary Management System',
-        description: 'Web application developed for managing a veterinary clinic, built with Vue.js and Tailwind CSS. Allows management of patients, pet owners, and veterinary consultations through an intuitive and responsive interface. Deployed on Netlify.',
+        title: t('Projects.Projects.Project6.Title'),
+        description: t('Projects.Projects.Project6.Description'),
         image: '/images/Veterianaria.png',
         technologies: ['Vue.js', 'Tailwind CSS', 'Netlify'],
         github: 'https://github.com/AbelGonz17/Admin-Pacientes',
         live: 'https://administracion-veterinaria.netlify.app/',
     }
-]
+])
 
 
 </script>
@@ -67,7 +71,7 @@ const projects: Project[] = [
 <template>
     <section id="proyectos" class="py-24 md:py-32 bg-card/30">
         <div class="mx-auto max-w-6xl px-6">
-            <SectionHeader number="05" title="Projects" />
+            <SectionHeader number="05" :title="t('Projects.Projects.Projects')" />
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                 <article v-for="project in projects" :key="project.title"
@@ -119,7 +123,7 @@ const projects: Project[] = [
             <div class="text-center mt-12">
                 <a href="https://github.com/AbelGonz17?tab=repositories" target="_blank" rel="noopener noreferrer"
                     class="inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground font-semibold rounded-lg hover:border-primary hover:text-primary transition-colors">
-                    See more on GitHub
+                    {{ t('Projects.Projects.Text1') }}
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -129,5 +133,3 @@ const projects: Project[] = [
         </div>
     </section>
 </template>
-
-
