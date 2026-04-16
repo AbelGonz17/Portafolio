@@ -1,10 +1,10 @@
 {
   "Job1": {
-    "role": "Desarrollador Full Stack",
-    "Badge": "Pasantía",
+    "role": "Analista Programador Backend",
+    "Badge": "Trabajo",
     "Company": "Laboratorio Referencia",
     "Period": "2025 - Presente",
-    "Description": "Desarrollo y mantenimiento de aplicaciones web utilizando Vue en el frontend y .NET en el backend. Implementación de APIs, integración con bases de datos y despliegue en entornos Docker, trabajando en colaboración con equipos multidisciplinarios."
+    "Description": "Analista Programador Backend especializado en el ecosistema .NET. Responsable del diseño, implementación y mantenimiento de APIs robustas y microservicios, garantizando escalabilidad a través del uso de Docker. Experto en optimización de bases de datos y arquitectura de sistemas, colaborando con equipos multidisciplinarios para transformar requisitos empresariales en soluciones técnicas eficientes."
   },
   "Job2": {
     "role": "Desarrollador Backend",

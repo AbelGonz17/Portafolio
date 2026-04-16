@@ -1,10 +1,10 @@
 {
   "Job1": {
-    "role": "Full Stack Developer",
-    "Badge": "Internship",
+    "role": "Backend Programmer Analyst",
+    "Badge": "Work",
     "Company": "Laboratoio Referencia",
     "Period": "2025 - Present",
-    "Description": "Development and maintenance of web applications using Vue in the frontend and .NET in the backend. Implementation of APIs, integration with databases and deployment in Docker environments, working in collaboration with multidisciplinary teams."
+    "Description": "Backend Analyst Programmer specializing in the .NET ecosystem. Responsible for the design, implementation, and maintenance of robust APIs and microservices, ensuring scalability through the use of Docker. Expert in database optimization and systems architecture, collaborating with multidisciplinary teams to transform business requirements into efficient technical solutions."
   },
   "Job2": {
     "role": "Backend Developer",
