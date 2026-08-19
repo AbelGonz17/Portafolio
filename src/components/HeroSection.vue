@@ -20,7 +20,10 @@ const { t } = useI18n()
                 <!-- Text Content -->
                 <div class="order-2 md:order-1">
 
-                    <!-- Nombre + rol en una sola línea visual coherente -->
+                    <!-- Logo & Nombre -->
+                    <div class="mb-6 inline-block">
+                        <img src="/images/logo.jpg" alt="Logo personal" class="w-20 h-20 md:w-24 md:h-24 rounded-2xl shadow-[0_0_20px_rgba(0,255,255,0.2)] border border-primary/20" />
+                    </div>
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
                         {{ t('hero.Abel') }}
                     </h1>
