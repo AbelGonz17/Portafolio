@@ -13,16 +13,16 @@
       "Description": "RESTful API for managing appointments and services in a barbershop. Implements JWT authentication, availability control, user management, and SQL Server data persistence, following clean architecture principles and organized code structure."
     },
     "Project4": {
-      "Title": "Drinks & Coffee E-Commerce",
-      "Description": "E-commerce web application developed with Vue.js and Tailwind CSS. Features user authentication with Firebase, shopping cart functionality, dynamic product management, and deployment on Vercel."
+      "Title": "SkyFlow",
+      "Description": "Real-time flight information system designed under Clean Architecture principles. It uses SignalR for instant updates and offers a modern and intuitive interface for dynamic monitoring of flight statuses. Containerized with Docker to ensure agile and scalable deployment."
     },
     "Project5": {
       "Title": "Microservices Architecture with RabbitMQ",
       "Description": "Microservices-based project developed in .NET using RabbitMQ for inter-service communication. Implements CQRS and Clean Architecture principles to ensure scalability, maintainability, and clear separation of responsibilities."
     },
     "Project6": {
-      "Title": "Veterinary Management System",
-      "Description": "Web application developed for managing a veterinary clinic, built with Vue.js and Tailwind CSS. Allows management of patients, pet owners, and veterinary consultations through an intuitive and responsive interface. Deployed on Netlify."
+      "Title": "DosisPlus",
+      "Description": "Web application oriented towards pharmacological adherence management and medical reminders. Developed with Vue.js and TypeScript, it offers an interactive dashboard for dose registration, inventory control, and symptom tracking. Designed with a responsive and modern approach using Tailwind CSS to ensure a fluid and intuitive user experience."
     },
     "Text1": "See more on GitHub",
     "Projects": "Projects"

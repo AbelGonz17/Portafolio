@@ -13,16 +13,16 @@
       "Description": "API RESTful para la gestión de citas y servicios en una barbería. Implementa autenticación JWT, control de disponibilidad, gestión de usuarios y persistencia de datos con SQL Server, siguiendo principios de Clean Architecture y una estructura de código organizada."
     },
     "Project4": {
-      "Title": "E-Commerce de Bebidas y Café",
-      "Description": "Aplicación web de comercio electrónico desarrollada con Vue.js y Tailwind CSS. Incluye autenticación de usuarios con Firebase, funcionalidad de carrito de compras, gestión dinámica de productos y despliegue en Vercel."
+      "Title": "SkyFlow",
+      "Description": "Sistema de información de vuelos en tiempo real diseñado bajo los principios de Clean Architecture. Utiliza SignalR para actualizaciones instantáneas y ofrece una interfaz moderna e intuitiva para el monitoreo dinámico de estados de vuelo. Contenerizada con Docker para asegurar un despliegue ágil y escalable."
     },
     "Project5": {
       "Title": "Arquitectura de Microservicios con RabbitMQ",
       "Description": "Proyecto basado en microservicios desarrollado en .NET utilizando RabbitMQ para la comunicación entre servicios. Implementa CQRS y principios de Clean Architecture para garantizar escalabilidad, mantenibilidad y una clara separación de responsabilidades."
     },
     "Project6": {
-      "Title": "Sistema de Gestión Veterinaria",
-      "Description": "Aplicación web desarrollada para la gestión de una clínica veterinaria, construida con Vue.js y Tailwind CSS. Permite administrar pacientes, dueños de mascotas y consultas veterinarias mediante una interfaz intuitiva y responsiva. Desplegada en Netlify."
+      "Title": "DosisPlus",
+      "Description": "Aplicación web orientada a la gestión de adherencia farmacológica y recordatorios médicos. Desarrollada con Vue.js y TypeScript, ofrece un panel interactivo para el registro de dosis, control de inventario y seguimiento de síntomas. Diseñada con un enfoque responsivo y moderno utilizando Tailwind CSS para garantizar una experiencia de usuario fluida e intuitiva."
     },
     "Text1": "Ver más en GitHub",
     "Projects": "Proyectos"
